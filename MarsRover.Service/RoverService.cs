@@ -73,6 +73,8 @@ namespace MarsRover.Service
                 case Direction.West:
                     rover.Position.XCoordinate--;
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException("Wrong Direction value");
             }
         }
 
