@@ -65,9 +65,7 @@ namespace MarsRover.Service
                     rover.Position.YCoordinate++;
                     break;
                 case Direction.South:
-                    rover.Position.YCoordinate = (rover.Position.YCoordinate - 1) >= 0
-                        ? rover.Position.YCoordinate - 1
-                        : throw new Exception("");
+                    rover.Position.YCoordinate--;
                     break;
                 case Direction.East:
                     rover.Position.XCoordinate++;

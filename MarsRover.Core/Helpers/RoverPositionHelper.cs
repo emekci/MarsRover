@@ -8,7 +8,7 @@ namespace MarsRover.Core.Helpers
     {
         public static void CheckRoversPosition(IRover firstRover, IRover secondRover)
         {
-            if (firstRover.Position == secondRover.Position)
+            if ((firstRover.Position.XCoordinate == secondRover.Position.XCoordinate) && (firstRover.Position.YCoordinate == secondRover.Position.YCoordinate))
             {
                 throw new ArgumentException(ErrorMessages.BothRoversAreSamePosition);
             }
